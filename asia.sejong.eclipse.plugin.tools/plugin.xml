@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="asia.sejong.eclipse.plugin.tools.views"
+            name="편리툴">
+      </category>
+      <view
+            allowMultiple="false"
+            category="asia.sejong.eclipse.plugin.tools.views"
+            class="asia.sejong.eclipse.plugin.tools.ui.view.sfffopv.SameFolderFileFinderOnProjectsView"
+            id="asia.sejong.eclipse.plugin.tools.ui.view.sfffopv"
+            name="SamePathFiles"
+            restorable="false">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="asia.sejong.eclipse.plugin.tools.ui.preference.ConveniencePreferencePage"
+            id="asia.sejong.eclipse.plugin.tools.page"
+            name="편리툴">
+      </page>
+   </extension>
+   
+   <!-- menu -->
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution locationURI="popup:org.eclipse.ui.popup.any">
+         <menu
+               label="Helper Actions">
+            <dynamic
+                  class="asia.sejong.eclipse.plugin.tools.ui.menu.HelperActionsContributionItem"
+                  id="asia.sejong.eclipse.plugin.tools.menu.HelperActions">
+            </dynamic>
+         </menu>
+      </menuContribution>
+   </extension>
+</plugin>
