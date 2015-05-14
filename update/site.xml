@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/asia.sejong.eclipse.plugin.tools.feature_1.0.0.201505141442.jar" id="asia.sejong.eclipse.plugin.tools.feature" version="1.0.0.201505141442">
+      <category name="asia.sejong.eclipse.plugin.tools"/>
+   </feature>
+   <category-def name="asia.sejong.eclipse.plugin.tools" label="Plugins Tools #5">
+      <description>
+         Plugins Tools #5
+      </description>
+   </category-def>
+</site>
