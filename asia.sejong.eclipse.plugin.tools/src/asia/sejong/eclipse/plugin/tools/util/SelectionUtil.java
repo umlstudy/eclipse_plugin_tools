@@ -1,7 +1,5 @@
 package asia.sejong.eclipse.plugin.tools.util;
 
-import java.io.IOException;
-
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IResource;
@@ -30,9 +28,9 @@ public class SelectionUtil {
 			
 			if ( container != null ) {
 				try {
-					return container.getRawLocation().toFile().getCanonicalPath();
-				} catch (IOException e) {
-					e.printStackTrace();
+					return container.getLocation().toString();
+				} catch (Exception e) {
+					throw ExceptionUtil.getRuntimeException(e);
 				}
 			}
 		}
