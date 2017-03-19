@@ -15,6 +15,14 @@
             name="SamePathFiles"
             restorable="false">
       </view>
+      <view
+            allowMultiple="false"
+            category="asia.sejong.eclipse.plugin.tools.views"
+            class="asia.sejong.eclipse.plugin.tools.ui.view.fav.FavoriteLinksView"
+            id="asia.sejong.eclipse.plugin.tools.ui.view.fav.FavoriteLinksView"
+            name="FavoriteLink"
+            restorable="true">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.preferencePages">
@@ -33,6 +41,19 @@
             <dynamic
                   class="asia.sejong.eclipse.plugin.tools.ui.menu.HelperActionsContributionItem"
                   id="asia.sejong.eclipse.plugin.tools.menu.HelperActions">
+            </dynamic>
+         </menu>
+      </menuContribution>
+   </extension>
+   
+   <!-- menu -->
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution locationURI="popup:org.eclipse.ui.popup.any">
+         <menu
+               label="add favoriteLink">
+            <dynamic
+                  class="asia.sejong.eclipse.plugin.tools.ui.view.fav.FavoriteLinkAddContributionItem"
+                  id="asia.sejong.eclipse.plugin.tools.ui.view.fav.FavoriteLinkAddContributionItem">
             </dynamic>
          </menu>
       </menuContribution>
