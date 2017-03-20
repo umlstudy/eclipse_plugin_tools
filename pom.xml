@@ -21,6 +21,14 @@
 		<module>mars</module>
         </modules>
 
+<repositories>
+<repository>
+   <id>eclipse-mars</id>
+   <url>http://download.eclipse.org/releases/mars</url>
+   <layout>p2</layout>
+</repository>
+</repositories>
+
         <build>
                 <plugins>
                         <plugin>
