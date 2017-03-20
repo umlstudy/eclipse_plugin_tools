@@ -5,8 +5,6 @@ import java.util.Iterator;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.PlatformObject;
-import org.eclipse.jdt.core.IJavaElement;
-import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jface.action.ContributionItem;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.swt.SWT;
