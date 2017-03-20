@@ -3,6 +3,10 @@ package asia.sejong.eclipse.plugin.tools.ui.view.fav;
 import java.util.Iterator;
 
 import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IResource;
+import org.eclipse.core.runtime.PlatformObject;
+import org.eclipse.jdt.core.IJavaElement;
+import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jface.action.ContributionItem;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.swt.SWT;
@@ -37,8 +41,12 @@ public class FavoriteLinkAddContributionItem extends ContributionItem {
 					if ( iterator != null ) {
 						while ( iterator.hasNext() ) {
 							Object ele = iterator.next();
-							if ( ele instanceof IFile ) {
-								Activator.addFavoriteLink((IFile)ele);
+							if ( ele instanceof PlatformObject ) {
+								PlatformObject po = (PlatformObject)ele;
+								Object target = po.getAdapter(IResource.class);
+								if ( target instanceof IFile ) {
+									Activator.addFavoriteLink((IFile)target);
+								}
 							}
 						}
 					}
