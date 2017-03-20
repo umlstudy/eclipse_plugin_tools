@@ -5,11 +5,11 @@ Bundle-SymbolicName: asia.sejong.eclipse.plugin.tools;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: asia.sejong.eclipse.plugin.tools.Activator
 Bundle-Vendor: asia.sejong
-Require-Bundle: org.eclipse.ui;bundle-version="[3.6.2,4.0.0)",
- org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)",
- org.eclipse.ui.ide;bundle-version="[3.6.2,4.0.0)",
+Require-Bundle: org.eclipse.ui;bundle-version="3.6.2",
+ org.eclipse.core.runtime;bundle-version="3.6.0",
+ org.eclipse.ui.ide;bundle-version="3.6.2",
  org.apache.commons.io;bundle-version="2.0.1",
  org.apache.commons.lang;bundle-version="2.6.0",
- org.eclipse.core.resources;bundle-version="[3.6.1,4.0.0)"
+ org.eclipse.core.resources;bundle-version="3.6.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
