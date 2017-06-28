@@ -18,6 +18,14 @@
       <view
             allowMultiple="false"
             category="asia.sejong.eclipse.plugin.tools.views"
+            class="asia.sejong.eclipse.plugin.tools.ui.view.SameFilesView.SameFilesView"
+            id="asia.sejong.eclipse.plugin.tools.ui.view.SameFilesView"
+            name="SameFiles"
+            restorable="false">
+      </view>
+      <view
+            allowMultiple="false"
+            category="asia.sejong.eclipse.plugin.tools.views"
             class="asia.sejong.eclipse.plugin.tools.ui.view.fav.FavoriteLinksView"
             id="asia.sejong.eclipse.plugin.tools.ui.view.fav.FavoriteLinksView"
             name="FavoriteLink"
